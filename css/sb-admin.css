@@ -1,0 +1,780 @@
+    /*!
+     * Start Bootstrap - SB Admin Bootstrap Admin Template (http://startbootstrap.com)
+     * Code licensed under the Apache License v2.0.
+     * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+     */
+
+    /* Global Styles */
+    body {
+        margin-top: 100px;
+        background-color: #fff;
+    }
+
+    @media(min-width:768px) {
+        body {
+            margin-top: 50px;
+        }
+    }
+    .panel-footer {
+    	/*white-space: nowrap;*/
+        padding: 10px 5px;
+        background-color: #f5f5f5;
+        border-top: 1px solid #ddd;
+        border-bottom-right-radius: 3px;
+        border-bottom-left-radius: 3px;
+    }
+    .from-margin {
+        margin-top: 50px;
+    }
+	/*logo*/
+	/*.hw-logo{
+		float:left;
+		margin-top:2px;
+		height:50px;
+		margin-left:50px;
+
+	}
+	.hw-fonts{
+		float:left;
+	}*/
+    /*demo下拉菜单*/
+    #vehicles-select{
+        display:none;
+    }
+    /*margin*/
+    .hw-margin-two {
+        margin-top: 1%;
+    }
+
+    .hw-margin-thr {
+        margin-top: 3%;
+    }
+
+    .hw-margin-fiv {
+        margin-top: 5%;
+    }
+    /*地图*/
+    .map_container {
+        width: 100%;
+        height: 500px;
+        position: relative;
+    }
+
+    .return_container {
+        position: relative;
+        width: 100%;
+        height: 500px;
+        margin-top: 10px;
+    }
+
+    #container {
+        width: 100%;
+        height: 100%;
+    }
+
+    /*lw_search*/
+    .lw_search {
+        width: 100%;
+        bottom: 0;
+    }
+
+    /*.lw_search,.dw_add span,select {
+        font-size: 0.875em;
+    }*/
+
+    .time-select-left {
+        width: 33%;
+        height: auto;
+        float: left;
+    }
+
+    .time-select-right {
+        width: 67%;
+        float: left;
+    }
+
+    .time-select-btn {
+        float: left;
+    }
+
+    .breeadcrumb a {
+        color: #777;
+    }
+    /*tittle*/
+    .panel-default>.panel-heading,.breadcrumb a {
+        color: #777;
+        border-color: #ddd;
+    }
+
+
+    /*轨迹回放type*/    
+    .lw_text_input {
+        height: 24px;
+		width:100px;
+        line-height: 24px;
+        border: 1px solid #c6c6c6;
+        margin: 0 6px;
+        vertical-align: middle;
+    }
+    /*轨迹回放btn*/ 
+    .subtm {
+        background-color: #4d88b8;
+        float: left;
+        cursor: pointer;
+        width: 60px;
+        margin-left: 10px;
+        height: 25px;
+        font-size: 0.875em;
+        font-weight: bold;
+        color: #fff;
+        border: 0px solid #fff;
+    }
+    /*w_search*/
+    .w_search {
+        height: 20%;
+        margin-top: 2%;
+    }
+
+    .w_search span {
+        font-size: 0.875em;
+        text-align: center;
+        line-height: 25px;
+    }
+
+    #wrapper {
+        padding-left: 0;
+    }
+
+    #page-wrapper {
+        width: 100%;
+        padding: 0;
+    }
+
+    .huge {
+        font-size: 2em;
+        line-height: normal;
+    }
+
+    @media(min-width:768px) {
+        #wrapper {
+            padding-left: 200px;
+        }
+
+        #page-wrapper {
+            padding: 10px;
+        }
+       .input-group .form-control{
+	    position: relative;
+	    z-index: 2;
+	    float: left;
+	    width:100%;
+	    margin-bottom: 0;
+	   }    
+    }
+
+    /* Top Navigation */
+
+    .top-nav {
+        padding: 0 15px;
+    }
+
+    .top-nav>li {
+        display: inline-block;
+        float: left;
+    }
+
+    .top-nav>li>a {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        line-height: 20px;
+       /*  color: #999; */
+    }
+
+    .top-nav>li>a:hover,
+    .top-nav>li>a:focus,
+    .top-nav>.open>a,
+    .top-nav>.open>a:hover,
+    .top-nav>.open>a:focus {
+        color: #fff;
+        background-color: #000;
+        cursor:pointer;
+    }
+
+    .top-nav>.open>.dropdown-menu {
+        float: left;
+        position: absolute;
+        margin-top: 0;
+        border: 1px solid rgba(0,0,0,.15);
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        background-color: #fff;
+        -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+        box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    }
+
+    .top-nav>.open>.dropdown-menu>li>a {
+        white-space: normal;
+    }
+
+    ul.message-dropdown {
+        padding: 0;
+        max-height: 250px;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    li.message-preview {
+        width: 275px;
+        border-bottom: 1px solid rgba(0,0,0,.15);
+    }
+
+    li.message-preview>a {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    li.message-footer {
+        margin: 5px 0;
+    }
+
+    ul.alert-dropdown {
+        width: 200px;
+    }
+
+    /* Side Navigation */
+
+    @media(min-width:768px) {
+        .side-nav {
+            position: fixed;
+            top: 51px;
+            left: 200px;
+            width: 200px;
+            margin-left: -200px;
+            border: none;
+            border-radius: 0;
+            overflow-y: auto;
+            bottom: 0;
+            overflow-x: hidden;
+            padding-bottom: 40px;
+            background-color: #0894ec;
+        }
+    /*     .main_but{ margin-top:15%; } */
+
+        .side-nav>li>a {
+            width: 225px;
+        }
+
+       /*  .side-nav li a:hover,
+        .side-nav li a:focus {
+            outline: none;
+            background-color: #2dabe8 !important;
+            color:#fff;
+        } */
+    }
+
+    .side-nav>li>ul {
+        padding: 0;
+    }
+
+    .side-nav>li>ul>li>a {
+        display: block;
+        padding: 10px 15px 10px 38px;
+        text-decoration: none;
+       /*  color: #999; */
+    }
+
+    .side-nav>li>ul>li>a:hover {
+        color: #fff;
+    }
+
+    /* Flot Chart Containers */
+
+    .flot-chart {
+        display: block;
+        height: 400px;
+    }
+
+    .flot-chart-content {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Custom Colored Panels */
+
+    .huge {
+        font-size: 2em;
+    }
+
+    .f-fonts {
+        font-size: 1em;
+        text-align: right;
+        margin-top: 25%;
+    }
+
+
+    /*green--1*/
+    .panel-green {
+        border-color: #6ec65e;
+    }
+
+    .panel-green > .panel-heading {
+        border-color: #6ec65e;
+        color: #fff;
+        background-color: #6ec65e;
+    }
+
+    .panel-green > .panel-footer {
+        color: #6ec65e;
+    }
+
+    .panel-green > .panel-footer:hover {
+        color: #4c8437;
+    }
+
+
+    /*blue--2*/
+    .panel-blue {
+        border-color: #0894ec;
+    }
+
+    .panel-blue > .panel-heading {
+        border-color: #0894ec;
+        color: #fff;
+        background-color: #0894ec;
+    }
+
+    .panel-blue > .panel-footer {
+        color: #0894ec;
+    }
+
+    .panel-blue > .panel-footer:hover {
+        color: #05649f;
+    }
+
+
+    /*yellow--3*/
+    .panel-yellow {
+        border-color:#f0ad4e;
+    }
+
+    .panel-yellow > .panel-heading {
+        border-color: #f0ad4e;
+        color: #fff;
+        background-color: #f0ad4e;
+    }
+
+    .panel-yellow > .panel-footer {
+        color: #f0ad4e;
+    }
+
+    .panel-yellow > .panel-footer:hover {
+        color: #df8a13;
+    }
+
+    /*red--4*/
+    .panel-red {
+        border-color: #fe5e5e;
+    }
+
+    .panel-red > .panel-heading {
+        border-color: #fe5e5e;
+        color: #fff;
+        background-color: #fe5e5e;
+    }
+
+    .panel-red > .panel-footer {
+        color: #fe5e5e;
+    }
+
+    .panel-red > .panel-footer:hover {
+        color: #ce5454;
+    }
+
+
+    /*green-t--4*/
+    .panel-green-t {
+        border-color: #83cdac;
+    }
+
+    .panel-green-t > .panel-heading {
+        border-color: #83cdac;
+        color: #fff;
+        background-color: #83cdac;
+    }
+
+    .panel-green-t > .panel-footer {
+        color: #83cdac;
+    }
+
+    .panel-green-t > .panel-footer:hover {
+        color: #6fa78e;
+    }
+
+
+    /*pink--6*/
+    .panel-cream {
+        border-color: #55d7cd;
+    }
+
+    .panel-cream > .panel-heading {
+        border-color: #55d7cd;
+        color: #fff;
+        background-color: #55d7cd;
+    }
+
+    .panel-cream > .panel-footer {
+        color: #55d7cd;
+    }
+
+    .panel-cream > .panel-footer:hover {
+        color: #3cada4;
+    }
+
+    /*油耗查询*/
+    .main_but {
+        background-color:#4d88b8;
+        font-family: "新宋体";
+        font-size: 0.875em;
+        line-height: 22px;
+        color: #FFF;
+        text-align: center;
+        border: none;
+        margin-left: 15px;
+    }
+    #main_update{
+        background-color:#4d88b8;
+        font-family: "新宋体";
+        font-size: 0.875em;
+        line-height: 22px;
+        color: #FFF;
+        text-align: center;
+        border: none;
+        margin-left: 15px;
+        display:none;
+    }
+    /*magrin-top*/
+    .dw_margin {
+        margin-top: 20px;
+    }
+
+    /*left-nav*/
+    .side-nav span {
+        color: #dfdfdf;
+        font-weight:700;
+    }
+
+    .side-nav span:hover {
+        color: #fff;
+    }
+    /*modal-body fonts*/
+    .font-center {
+        text-align: center;
+    }
+    /*导航背景色*/
+       .navbar-inverse {
+        background-color: #0894ec;
+        border-color: #0484a9;
+    }
+    /*left导航文字*/
+    .navbar-inverse .navbar-nav>li>a {
+        color: #fff;
+        background-color: #0894ec;
+    }
+     .breadcrumb .fa,.panel-title .fa{
+        color: #F2AD4B;
+    }
+    /*tittle*/
+    .navbar-brand {
+        font-size: 2em;
+    }
+    /*提示*/
+    .warning-fonts{
+        color: rgb(255, 0, 0);
+        height:15px;
+        line-height:15px;
+        margin:10px 0 0 20px;
+    }
+
+    /*时间控件*/
+    .control-label{
+    	font-size:1em;
+    	line-height:35px;
+    }
+
+    .form-group1{
+    	width:100%;
+    	margin-bottom:15px;
+    }
+
+   .input-group .form-control{
+   	width:152px;
+    position: relative;
+    z-index: 2;
+    float: left;
+    margin-bottom: 0;
+   }
+
+    /*车辆信息添加页面*/
+   .add-container{
+    width:100%;
+    height:auto;
+    border:1px solid #ddd;
+   }
+    .lw-edit-sm{
+        height:35px;
+        line-height:35px;
+        font-size:0.75em;
+        color:#EE232A;
+        float:left;
+    }
+   .lw-edit-sm span{
+       color:#EE232A;
+    }
+    .lw-edit-contant{
+        width:100%;
+        height:auto;
+    }
+    .edit-table-label{
+        font-size: 14px!important;
+        padding-right: 20px;
+        color: #323333;
+        font-family: "微软雅黑"!important;
+    }
+   .u-ipt {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: none repeat scroll 0 0 #fff;
+    border-color: #c0c0c0 #d9d9d9 #d9d9d9;
+    border-image: none;
+    border-right: 1px solid #d9d9d9;
+    border-style: solid;
+    border-width: 1px;
+    color: #777;
+    font-size: 14px;
+    /* height: 17px; */
+    line-height: 17px;
+    padding: 5px;
+    width: 180px;
+    }
+    .edit-important {
+    background: url("../images/important.gif") no-repeat left;    
+    }
+    .lw-describe{
+        font-size: 12px;
+        color: #337baa;
+        padding-left: 11px;
+        text-indent: 5px;
+    }
+    .edit-table tr td {
+    padding-top: 20px;
+    }
+    .edit-spe {
+    float: left;
+    height: 22px;
+    line-height: 22px;
+    margin-right: 20px;
+   /*  width: 250px; */
+    border: 1px solid #c6c6c6;
+    font-size: 12px;
+    color: #333;
+   }
+   .fonts-right{
+    text-align: right;
+   }
+   .edit-conmit {
+    text-align: center;
+    margin-top: 20px;
+    }
+   .edit-submit {
+    height: 30px;
+    background: url("../images/sure.gif") no-repeat left;
+    border: 0px solid #fff;
+    }
+    .edit-canse {
+    height: 30px;
+    background: url("../images/canse.gif") no-repeat left;
+    border: 0px solid #fff;
+    }
+
+    .edit-conmit button {
+    margin-right: 50px;
+    width: 72px; 
+    height: 27px;
+    border: 0px solid #fff;
+    }
+    @-moz-document url-prefix() {
+     fieldset { display: table-cell; }
+    }
+
+    
+	
+	/*车辆信息查询页面*/
+   .lw_text_inputb {
+        height: 24px;
+		width:200px;
+        line-height: 24px;
+        border: 1px solid #c6c6c6;
+        margin: 0 6px;
+        vertical-align: middle;
+    }
+	/*页脚footer*/
+   .lw_bottom {
+    width: 100%;
+    height:200px;
+    padding-top: 20px;
+    padding-bottom: 0px;
+   }
+   .lw_bottom p {
+    text-align: center;
+    width: 100%;
+    line-height: 20px;
+    height: 20px;
+    font-family: "微软雅黑";
+    bottom: 0px;
+    display:none;
+   }
+  .lw_bottom p {
+	text-align: center;
+	width: 100%;
+	line-height: 20px;
+	height: 20px;
+	font-family: "微软雅黑";
+	display:none;
+	}
+#dw_add span{
+  font-weight:700;
+}
+
+.col-padding{
+	padding-right: 0px;
+    padding-left: 15px;
+}
+
+/*select*/
+.form-control{ 
+    width:60%; 
+}
+.aa-right{
+	left:10%;
+}
+
+#spe1,#spe2{
+	text-align:left; 
+	line-height:34px;
+}
+
+#moto_tableb{
+	width:20%;
+	float:left;
+	height:auto;
+	line-height:35px;
+	background-color:#F5F5F5;
+	/* text-align:center; */
+	border:1px solid #ccc;
+}
+
+.moto-tbody tr{
+    width:100%;
+}
+.moto-tbody tr>td:hover{
+    background-color:#E3E3E3;
+    cursor:pointer;
+}
+.moto_tablea{
+	width:80%;
+	float:left;
+}
+.moto-thead tr th{
+	text-indent:15px;
+} 
+.input-a{
+    display:block;
+}
+/* .new-tab th{
+    text-align:center;
+}
+.motoTbody td{
+    text-align:center;
+} */
+.row1{
+    margin-right: 0px;
+    margin-left: 0px;
+}
+.panel-title1{
+    padding-top:10px;
+    text-indent:-12px;
+}
+
+
+/*新增规则*/
+.myform{
+    margin-top:15px;
+}
+/*暂无数据*/
+.nullcss{
+	width:100%;
+	height:25px;
+	line-height:25px;
+	font-size:16px;
+	color:#FF0000;
+	text-indent:8px;
+}
+
+/*模态框body*/
+.new-modal-body{
+	margin-bottom:40px;
+}
+/*模态框label*/
+.control-label-b{
+	line-height:34px;
+}
+@media (min-width:768px) {
+    .form-horizontal .control-label-a {
+        padding-top:7px;
+        margin-bottom:0;
+        text-align:right;
+        text-indent:25px;
+    }
+}
+@media (max-width:768px) {
+   .nullcss{
+	width:100%;
+	height:25px;
+	line-height:25px;
+	font-size:12px;
+	color:#FF0000;
+	text-indent:8px;
+}
+}
+.rail-center{
+    text-align:center;
+    vertical-align:middle;
+    text-indent:25px;
+    padding-top:7px;
+}
+.rail-center1{
+    text-align:center;
+    vertical-align:middle;
+    text-indent:25px;
+}
+.rail-top{
+    margin-top:20px;
+}
+
+/*table-hover*/
+.tab-hover{
+    cursor:pointer;
+}
+/*行高35px*/
+.rail-lineheight{
+    line-height:35px;
+}
+/*table*/
+/* #m_tab thead>tr>th{
+    text-align:left;
+}
+#m_tab thead>tr>th{
+    text-align:left;
+} */

@@ -1,0 +1,74 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{ margin:0; padding:0;}
+ul,li{ list-style:none;}
+
+/*wrapper*/
+.wrapper{ width:100%; height:auto; /*background:#F00;*/}
+/*nav*/
+.navbar-res{ width:100%; border:none; background:#F90;}
+.navbar-bd{ color:#fff; height:50px; padding:15px 15px; font-size:1.5em; line-height:50px;}
+
+/*wrapper_container*/
+.wrapper_container{ width:100%; height:800px;}
+/*left&right*/
+.nav_left{ float:left; height:auto;}
+.nav_right{ float:left; height:auto;}
+/*main_1*/
+.main_1{ width:100%; font-size:1em; color: #337baa; line-height:40px; font-weight:bold;border-bottom:1px solid #999;}
+/*lw_search*/
+.lw_search{ width:100%; margin-top:20px;}
+.lw_search span,select{ font-size:0.875em;}
+
+/*dw_add*/
+#dw_add{
+	margin-top:20px;
+	}
+/*油耗按时段查询*/
+.timer_container{width:100%; height:500px; background:#F00; margin-top:10px;}
+
+
+/*油耗按时段查询*/
+.lw_table{
+	width:100%;
+	margin:0 auto;	  
+    font-size: 0.75em;
+}
+.lw_table thead tr {
+    height: 48px;
+    color: #666;
+    background:#f4f4f4;
+}
+ .lw_table thead tr .t1{	
+    text-align: center;  
+	border: 1px solid #CCCCCC;
+	
+}
+ .lw_table thead tr .t2 {
+ 	text-align: center;
+    border-bottom: 1px solid #CCCCCC;
+    border-top: 1px solid #CCCCCC;
+    border-right: 1px solid #CCCCCC;
+}
+	
+.lw_table thead tr th {
+    font-size:0.75em;
+}
+
+/*查询按钮*/
+.main_but1 {
+	height: 24px;
+	width: 60px;
+	background-color:#4d88b8;
+	font-family: "新宋体";
+	font-size: 0.875em;
+	line-height: 24px;
+	color: #FFFFFF;
+	text-align: center;
+	border:none;
+}
+/*wrapper_footer*/
+.wrapper_footer{ width:100%;}
+/*w_search*/
+.w_search{width:100%; margin-top:20px;}

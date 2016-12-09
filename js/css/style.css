@@ -1,0 +1,232 @@
+@charset "utf-8";
+/* CSS Document */
+*{ margin:0; padding:0;}
+ul,li{ list-style:none;}
+#wrapper{ width:100%; height:auto;}
+.navbar-res{ border:none; background:#F90;}
+.navbar-bd{ color:#fff; height:50px; padding:15px 15px; font-size:1.5em;line-height:50px;}
+.nav_left{ width: 20%; float:left;}
+.nav_right{ width: 80%; height:auto; float:left;}
+
+
+/*menu*/	
+.left {
+	height: 740px;
+	width: 100%;
+	background-color: #f6f6f5;
+}
+.left_1 {
+	height: 40px;
+	width: 100%;
+	margin-left: 5px;
+	font-family: "新宋体";
+	font-size: 1em;
+	font-weight: bold;
+	line-height: 40px;
+	color: #f29518;
+	text-align: center;
+}
+
+.menu_1 {
+	height: 40px;
+	width: 100%;
+	font-family: "新宋体";
+	font-size: 0.875em;
+	line-height: 40px;
+	color:#333333;
+	text-align: center;
+}
+
+.menu_1:hover{
+	background-color:#347aaa;
+	color: #fff;
+	cursor:pointer;
+}
+
+
+
+/*main*/
+.car_select{
+	height: 40px;
+    line-height: 40px;
+    font-size: 0.875em;
+    color: #337baa;
+    cursor: pointer;
+	text-indent:20px;
+	}
+.main_1 {
+	height: 36px;
+	width: 98%;
+	margin:0 auto;
+	font-family: "新宋体";
+	font-size: 1em;
+	color: #337baa;
+	line-height: 36px;
+	background-repeat: no-repeat;
+	background-position: 10px center;
+	border-bottom:1px solid #CCC;
+	font-weight:bold;
+}
+.lw_search{
+    width: 100%;
+    margin-top: 20px;	
+}
+/*轨迹回放type*/	
+.lw_text_input{
+    height: 24px;
+    line-height: 24px;
+    border: 1px solid #c6c6c6;
+    margin: 0 6px;
+    vertical-align: middle;
+}
+/*轨迹回放container*/
+.container_a{
+	position:relative;
+	width:98%;
+	height:90%;
+	margin-top:10px;
+}
+#container{
+	position:absolute;
+	width:98%;
+	height:80%;
+}
+
+
+/*轨迹回放btn*/	
+.subtm{
+	background-color:#4d88b8;
+	float: left;
+    cursor: pointer;
+    width: 60px;
+	margin-left:10px;
+    height: 25px;
+    font-size: 0.875em;
+    font-weight: bold;
+    color: #fff;
+    border: 0px solid #fff;
+}	
+/*轨迹回放all*/
+.return_container{
+	margin:10px auto;
+	width:98%;
+	height:100%;
+	border:1px solid #CCC;
+	-webkit-box-shadow:2px 2px 3px #CCC;
+	-moz-box-shadow:2px 2px 3px #CCC;
+	}
+/*查询*/
+.main_but {
+	height: 24px;
+	width: 150px;
+	background-color:#4d88b8;
+	font-family: "新宋体";
+	font-size: 0.875em;
+	line-height: 24px;
+	color: #FFFFFF;
+	text-align: center;
+	border:none;
+}
+.main_but1 {
+	height: 24px;
+	width: 60px;
+	background-color:#4d88b8;
+	font-family: "新宋体";
+	font-size: 0.875em;
+	line-height: 24px;
+	color: #FFFFFF;
+	text-align: center;
+	border:none;
+}
+/*下拉列表*/
+#dw_add span,a,map_container{
+	margin-left:10px;
+}	
+#dw_add{
+	margin-top:20px;
+	}
+.dw2,.dw3{
+	margin-left:5%;
+}
+
+
+/*双日历*/
+.box{width:970px; padding:10px 20px; background-color:#fff; margin:10px auto;}
+.box a{padding-right:20px;}
+.demo1,.demo2,.demo3,.demo4,.demo5,.demo6{margin:25px 0;}
+h3{margin:10px 0;}
+.layinput{height: 22px;line-height: 22px;width: 150px;margin: 0;}
+
+/*map*/
+.map_container{
+	width:98%;
+	height:90%;	
+    margin:20px auto;
+}
+
+/*Map*/
+.info-tip {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	font-size: 12px;
+	background-color: #fff;
+	height: 35px;
+	text-align: left;
+	}
+
+/*油耗按时段查询*/
+.lw_table{
+	width:98%;
+	margin:0 auto;	  
+    font-size: 0.75em;
+}
+.lw_table thead tr {
+    height: 48px;
+    color: #666;
+    background:#f4f4f4;
+}
+ .lw_table thead tr .t1{	
+    text-align: center;  
+	border: 1px solid #CCCCCC;
+	
+}
+ .lw_table thead tr .t2 {
+ 	text-align: center;
+    border-bottom: 1px solid #CCCCCC;
+    border-top: 1px solid #CCCCCC;
+    border-right: 1px solid #CCCCCC;
+}
+	
+.lw_table thead tr th {
+    font-size:0.75em;
+}
+
+/*.echarts油耗报表*/
+.echarts_container{
+	width:98%;
+    margin:20px  auto;	
+	height:auto;	
+}
+
+
+/*底部*/
+.bottom {
+	height:auto;
+	width: 100%;
+	text-align: center;
+    width: 100%;
+    line-height: 20px;
+    height: 20px;
+    font-family: "微软雅黑";
+}
+/*版权文字*/
+.footer{
+	width:100%;
+	position:absolute;
+	bottom:0;
+}
+.footer_fonts{
+	text-indent:25px;
+	word-spacing:20px;
+}
